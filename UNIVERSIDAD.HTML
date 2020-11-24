@@ -1,15 +1,25 @@
 <html>
 	<head>
-		<TITLE>UNIVERSIDAD</TITLE>
-		<LINK REL="ICON" HREF="PROYECTO FINAL/BIRRETE.ico">
+<title> Universidad Politécnica Nacional</title>
+    <meta charset="UTF-8">
+    <link rel="icon"
+        href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
+        type="image/png" sizes="64x64" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
 		ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: #333;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
 		}
 
 		li {
@@ -19,7 +29,7 @@
 		. contac{
 				display: button;
 				}
-				
+					
 		li a {
 			display: block;
 			  color: white;
@@ -31,6 +41,7 @@
 		li a:hover {
 			background-color: gray;
 		}
+		
 		body{background-color:	rgb(0, 51, 102);
 		}
 		#cabecera{background-color:	rgb(0, 51, 153);
@@ -55,7 +66,7 @@
 				margin: 5px;
 				border: 1px solid #ccc;
 				float: left;
-				width: 180px;
+				width: 300px;
 			}
 		div.gallery img {
 				width: 100%;
@@ -72,79 +83,103 @@
 				color:black;
 				text-align:center;
 				text-transform: capitalize;
-		.contenedor{
-				margin: auto;
-				background-color: white;
-				width: 800px;
-				padding: 30px;
 			}
-				
+		.name{
+				color: white;
+				text-align: center;
+				font-size:270%;
+				margin-top:50px;
+			
 			}
-		ul, li{
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-		ul.carrucel{
-				position: relative;
-				width: 800px;
-				height: 300px;
-			}
-		ul.carrucel li{
-				position: absolute;
-				left:0;
-				top: 0;
-				opacity: 0;
-				width: inherit;
-				height: inherit;
-				background-color: white;
-				transition: opacity .5s;
-			}
-		ul.carrucel li img{
-				width: 100%;
-				height: 300px;
-				object-fit: cover;
-			}
-		ul.carrucel li:first-child{
-			opacity:1;
-			}
-		ul.carrucel li target{
-				opacity:1;
-			}
-		.menu{
-			    text-align: center;
-			    margin: 20px;
-			}
-		.menu li{
-			    display: inline-block;
-			    text-align: center;
-			}
-		.menu li a{
-			    display: inline-block;
-			    color: white;
-			    text-decoration: none;
-			    background-color: grey;
-	  		    padding: 10px;
-		  	    width: 20px;
-			    height: 20px;
-			    font-size: 20px;
-			    border-radius: 100%;
-			}
+		.deslizar {
+            width: 55%;
+            margin: auto;
+            overflow: hidden;
+            margin-top: 25px;
+            border-radius: 12px;
+            border: 5px solid #CCA9DD;
+        }
+
+        .deslizar ul {
+            text-align: center;
+            display: flex;
+            width: 400%;
+            padding: 0;
+
+            animation: cambio 20s infinite alternate;
+        }
+
+        .deslizar li {
+            width: 100%;
+            list-style: none;
+        }
+
+        .deslizar img {
+            width: 100%;
+            height: 420px;
+        }
+
+        @keyframes cambio {
+            0% {
+                margin-left: 0%;
+            }
+
+            20% {
+                margin-left: 0%;
+            }
+
+            25% {
+                margin-left: -100%;
+            }
+
+            45% {
+                margin-left: -100%;
+            }
+
+            50% {
+                margin-left: -200%;
+            }
+
+            70% {
+                margin-left: -200%;
+            }
+
+            75% {
+                margin-left: -300%;
+            }
+
+            100% {
+                margin-left: -300%;
+            }
+        }
+        img {
+            float: left;
+            margin: left;
+            border-radius: 10px;
+        }	
+		
+			
+			
+			
+			
 	</style>	
 	<body>
 		<ul>
-			  <li><a class="active" href="Inicio.html">Inicio</a></li>
-			  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
-			  <li><a href="escuela.html">Primaria</a></li>
-			  <li><a href="#Alumnos">Alumnos</a></li>
-			  <li><a href="#Contactanos">Contactanos</a></li>
+		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
+                        alt="Logo de la escuela"></a></li>
+		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
+		  <li><a href="escuela.html">Primaria</a></li>
+		  <li><a href="#Alumnos">Alumnos</a></li>
+		  <li><a href="#Contactanos"><i class="fas fa-phone"></i> Contactanos</a></li>
 		</ul>
 		<div id="borde">
 			<div id="cabecera">
 				<div class="logo">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Logo_oficial_de_Universitario.png" alt="logo universitario" style="width:200px;height:200px;">
-					<h1>La universidad Ernesto de la Cruz</h1>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Logo_oficial_de_Universitario.png" alt="logo universitario" style="width:200px;height:200px;float:left;margin-right:20px;margin-bottom:20px;">
+					<h1 class="name">La universidad Ernesto de la Cruz</h1>
 				</div>
+				
 			</div>
 		</div>
 		<div id="instalaciones">
@@ -167,31 +202,19 @@
 			  </a>
 			  <div class="desc">La universidad cuanta con un gran numero de egresados</div>
 			</div>
-			<div class="contenedor">
-				<ul class="carrucel">
-					<li id="carrucel1">
-						<img src="https://www.elnuevodia.com/resizer/NTKnkbpLox_50c8mdyYndAej3Nc=/829x0/smart/filters:quality(95):format(png)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/VC72J5ZF3RGLFM3J4ZXJSN3XHM.jpg" alt="universidad1" width="600" height="400">
-					</li>
-					<li id="carrucel2">
-						<img src="https://asset.winnetnews.com/image/cache/slide/post/image-kesempatan-kuliah-di-turki-makin-besar-ujiannya-pakai-bahasa-indonesia.png" alt="universidad1" width="600" height="400" alt="universidad2" width="600" height="400">
-					</li>
-					<li id="carrucel3">
-						<img src="https://lh3.googleusercontent.com/_KuwMciZ6kYJwbOzAnMbOPWcMxPSu2FJRnkHMqm5y5IdBTPB1VWCkKXj5Me_kT2K3Rz3dWA=s139" alt="universidad3" width="600" height="400">
-					</li>
-				</ul>
-				<ul class="menu">
-					<li>
-						<a href="#carrucel1">1</a>
-					</li>
-					<li>
-						<a href="#carrucel2">2</a>
-					</li>
-					<li>
-						<a href="#carrucel3">3</a>
-					</li>
-				</ul>
-			</div>
-		
+
 		</div>
+		<div class="deslizar">
+            <ul>
+                <li><img src="https://www.elnuevodia.com/resizer/NTKnkbpLox_50c8mdyYndAej3Nc=/829x0/smart/filters:quality(95):format(png)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/VC72J5ZF3RGLFM3J4ZXJSN3XHM.jpg">
+				</li>
+                <li><img src="https://asset.winnetnews.com/image/cache/slide/post/image-kesempatan-kuliah-di-turki-makin-besar-ujiannya-pakai-bahasa-indonesia.png">
+                </li>
+                <li><img src="https://lh3.googleusercontent.com/_KuwMciZ6kYJwbOzAnMbOPWcMxPSu2FJRnkHMqm5y5IdBTPB1VWCkKXj5Me_kT2K3Rz3dWA=s139">
+                </li>
+         
+            </ul>
+        </div>
+		
 	</body>
 </html>

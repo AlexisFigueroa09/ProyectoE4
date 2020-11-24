@@ -2,16 +2,28 @@
 <html>
 
 <head>
-    <title> Escuela </title>
+    <title> Primaria Politécnica Nacional</title>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1" type="image/png" sizes="64x64" />
+    <link rel="icon"
+        href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
+        type="image/png" sizes="64x64" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-		ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: #333;
+        * {
+            font-family: Arial;
+            margin: auto;
+        }
+
+        body {
+            background-color: #51D1F6;
+        }
+
+        ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
 		}
 
 		li {
@@ -33,45 +45,18 @@
 		li a:hover {
 			background-color: gray;
 		}
-        * {
-            font-family: Arial;
-            margin: auto;
-        }
 
-        body {
-            background-color: #51D1F6;
-        }
-
-        .menu {
-            height: 80px;
+        .nombre p {
             text-align: center;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            background-color: rgba(155, 155, 155, 0.9);
-        }
-
-        .menu li:hover {
-            cursor: pointer;
-        }
-
-        .menu li {
-            text-align: left;
-            flex-grow: 1;
-        }
-
-        .menu ul {
-            margin: 0;
-            list-style: none;
-            padding: 0;
-            display: flex;
+            margin-top: 25px;
+            font-size: 30px;
         }
 
         .deslizar {
             width: 55%;
             margin: auto;
             overflow: hidden;
-            margin-top: 45px;
+            margin-top: 25px;
             border-radius: 12px;
             border: 5px solid #CCA9DD;
         }
@@ -129,17 +114,6 @@
             }
         }
 
-        .bor {
-            text-align: left;
-            color: black;
-            margin: left;
-            float: left;
-            border-left: 6px solid red;
-            border-radius: 8px;
-            background-color: rgba(155, 155, 155, 0.9);
-            margin-right: 75%;
-        }
-
         h2 {
             font-family: Verdana;
         }
@@ -179,35 +153,54 @@
             border-radius: 10px;
         }
 
+        .contenedor p {
+            font-size: 18px;
+        }
+
+        .contenedor2 p {
+            font-size: 18px;
+        }
+
+        .contenedor3 p {
+            font-size: 18px;
+        }
+
+        .contactos {
+            width: 100%;
+            height: 180px;
+            margin-top: 100px;
+            background-color: yellow;
+        }
+
+
         img {
             float: left;
             margin: left;
             border-radius: 10px;
         }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Verdana;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
-	<ul>
-		  <li><a class="active" href="Inicio.html">Inicio</a></li>
+    <ul>
+		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
+                        alt="Logo de la escuela"></a></li>
+		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
 		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
 		  <li><a href="escuela.html">Primaria</a></li>
 		  <li><a href="#Alumnos">Alumnos</a></li>
-		  <li><a href="#Contactanos">Contactanos</a></li>
+		  <li><a href="#Contactanos"><i class="fas fa-phone"></i> Contactanos</a></li>
 	</ul>
-    <div class="menu">
-        <ul>
-            <li><a href="escuela.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png"
-                        width="120px" alt="Logo de la escuela"></a></li>
-            <li></li>
-            <li>
-                <p>Escuela<br>Politécnica Nacional</p>
-            </li>
-            <li></li>
-            <li><a><img src="https://image.flaticon.com/icons/png/512/1674/1674704.png" width="64" height="64"></a><br>
-                <p>Login</p>
-            </li>
-        </ul>
+
+    <div class="nombre">
+        <p>Escuela<br>Politécnica Nacional</p>
     </div>
 
     <div class="deslizar">
@@ -235,12 +228,10 @@
             alt="Niños jugando" width="300" height="200">
 
         <br>
-        <h3> Alumnos <h3>
+        <h2> Alumnos <h2>
                 <br>
-
-                <p> ufjnrjfnijrñaeoirjngurhgputngjtbnpjñtvb tjngqp9tungeirgnqejnvtjñnqt
-                    eiiduheid1 gdddgdhjaisjaiosxuoñuqedñquedbñ ahdbcuyd
-                    (Aqui explicamos como es el ambiente que llevan los alumnos con los demas). </p>
+                <p> Aliquam a augue a felis tincidunt dapibus. Aenean ullamcorper velit id lorem convallis varius.
+                    Proin non diam a enim accumsan egestas. </p>
 
     </div>
     <br>
@@ -250,12 +241,10 @@
             alt="Niños jugando" width="300" height="200">
 
         <br>
-        <h3> Maestros <h3>
+        <h2> Maestros <h2>
                 <br>
-
-                <p> ufjnrjfnijrñaeoirjngurhgputngjtbnpjñtvb tjngqp9tungeirgnqejnvtjñnqt
-                    eiiduheid1 gdddgdhjaisjaiosxuoñuqedñquedbñ ahdbcuyd
-                    (Aqui explicamos que tenemos maestros(as) muy preparados(as)). </p>
+                <p> Mauris pretium, enim et aliquet luctus, quam arcu volutpat elit, eu convallis dolor orci quis risus.
+                    Integer diam dui, accumsan et finibus quis.  </p>
 
     </div>
     <br>
@@ -265,12 +254,14 @@
             width="300" height="200">
 
         <br>
-        <h3> Instalaciones <h3>
+        <h2> Instalaciones <h2>
                 <br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper feugiat nibh, in aliquet
+                    lacus auctor et.</p>
 
-                <p> ufjnrjfnijrñaeoirjngurhgputngjtbnpjñtvb tjngqp9tungeirgnqejnvtjñnqt
-                    eiiduheid1 gdddgdhjaisjaiosxuoñuqedñquedbñ ahdbcuyd
-                    (Aqui explicamos los salones de la escuela, como estan equipados). </p>
+    </div>
+
+    <div class="contactos">
 
     </div>
 
