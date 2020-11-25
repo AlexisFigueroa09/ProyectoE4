@@ -7,12 +7,21 @@
         href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
         type="image/png" sizes="64x64" />
 <style>
+.linea {margin-left: 100px;
+		margin-right: 100px;
+		background-color: white;
+		height: 5px;
+		width: 1100px;
+}
+
 ul {
 	  list-style-type: none;
 	  margin: 0;
 	  padding: 0;
 	  overflow: hidden;
 	  background-color: #333;
+}
+.titulo{float: center;
 }
 
 li {
@@ -32,7 +41,7 @@ li a {
 }
 
 li a:hover {
-	background-color: gray;
+	background-color: #666666;
 }
 .deslizar{
     width: 68%;
@@ -73,13 +82,76 @@ li a:hover {
     text-align: center;
     font-family: sans-serif;
     color: white;
-    border-bottom: 6px solid white;
-    background-color: #449;
+    background-color: #8f00b3;
 }
+.contactos {
+            width: 100%;
+            height: 300px;
+            margin-top: 100px;
+            background-color: black;
+        }
+
+        .tab{
+            font-family: sans-serif;
+                text-align: center;
+                top: 0;
+				color: white;
+        }
+
+        .tab h2{
+            text-align: left;
+        }
+
+        .tab table{
+            width: 100%;
+                text-align: center;
+        }
+        .info{
+            text-align: left;
+            font-size: 14px;
+            padding: 30px;
+        }
+
+        .cont{
+            text-align: right;
+            font-size: 14px;
+            padding: 30px;
+        }
+
+        .pr{
+            padding: 10px;
+        }
+        
+        .pr2{
+            padding: 10px;
+        }
+
+        .pr3{
+            padding: 10px;
+        }
+		.copy{
+            width: 100%;
+            height: 30px;
+            margin-top: 20px;
+            background-color: rgb(158, 158, 9);
+            text-align: center;
+        }
+		img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Verdana;
+            font-size: 20px;
+        }
 </style>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body style=background-color:#449;>
+<body style=background-color:#8f00b3;>
 
 	<ul>
 		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
@@ -87,13 +159,17 @@ li a:hover {
 		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
 		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
 		  <li><a href="escuela.html">Primaria</a></li>
-		  <li><a href="#Alumnos">Alumnos</a></li>
-		  <li><a href="#Contactanos"><i class="fas fa-phone"></i> Contactanos</a></li>
+		  <li><a href="Alumnos.html">Alumnos</a></li>
+		  <li><a href="#Instalaciones"></i> Instalaciones</a></li>
+		  <li><a href="#Eventos">Eventos</a></li>
 	</ul>
 		<div class="descripcion">
-			<h2><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png"
-                        width="120px" alt="Logo de la escuela">Politécnica Nacional</h2>
+			<img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png"
+                        width="120px" alt="Logo de la escuela"><h2 class="titulo">Politécnica Nacional</h2>
 			<p> Institucón con más de 30 años de recibir alumnos con una gran experiencia<br>con los mejores maestros capacitados para importar las clases y<br> empresas asociadas para hacer practicas a alumnos de nivel superior</p>
+		</div>
+		<div class="linea">
+		<br>
 		</div>
 			<div class="deslizar">
 				<ul>
@@ -108,7 +184,9 @@ li a:hover {
 			<h2>Universidad</h2>
 			<p> Institución para educacion superior para almnos que quieren estudiar una ingenieria o licenciatura<br> en distintos tipos de carreras con un examen de admicion y clases online por prevencion a contagios de covid</p>
 			</div>
+		<div class="linea">
 		<br>
+		</div>
 			<div class="deslizar">
 				<ul>
 				<li> <img src="https://eacnur.org/blog/wp-content/uploads/2017/07/iStock-486325400-724x400.jpg"></li>
@@ -122,8 +200,37 @@ li a:hover {
 			<h2>Primaria</h2>
 			<p> Institución para educacion primaria para almnos <br> clases online por prevencion a contagios de covid</p>
 			</div>
-		<br>
-			<div>
-			<h2>Contactanos</h2>
+		<div class="linea">
+		
+		</div>
+		<div class="contactos">
+        <div class="tab">
+            <table>
+                <tr>
+                    <th><h3 class="pr">Más sobre nosotros</h3></th>
+                    <th><h3 class="pr2">Redes Sociales</h3></th>
+                    <th><h3 class="pr3">Contactos</h3></th>
+                </tr>
+                <tr>
+                    <td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
+                    <td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
+                    <td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
+                    <td></td>
+                </tr>
+            </table>
+    </div>
+
+    <div class="copy">
+        <p>© Copyright - Todos los derechos reservados</p>
+    </div>
 </body>
 </html>
