@@ -7,6 +7,17 @@
         href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
         type="image/png" sizes="64x64" />
 <style>
+	.linea {margin-left: 100px;
+		margin-right: 100px;
+		background-color: white;
+		height: 5px;
+		width: 1100px;
+}
+	.descripcion{
+		text-align: center;
+		font-family: sans-serif;
+		color: white;
+}
 	body{background-color:#8f00b3;
 	}
 	ul {
@@ -38,7 +49,7 @@
 	li a:hover {
 		background-color: #666666;
 	}
-	td {
+	.tc {
 	  border: 3px solid black;
 	  border-collapse: collapse;
 	  text-align: center;
@@ -46,15 +57,31 @@
 	  color: black;
 	  padding: 15px;
 }
-	th{
+	.tbl1{
+	 border: 3px solid black;
+	  border-collapse: collapse;
+	  text-align: center;
+	  color: black;
+	  padding: 15px;
+	background-color: white;
+	}
+	.tbl2{
+	 border: 3px solid black;
+	  border-collapse: collapse;
+	  text-align: center;
+	  color: black;
+	  padding: 15px;
+	background-color: white;
+	}
+	.tth{
 	  border: 3px solid black;
 	  border-collapse: collapse;
 	  text-align: center;
-	  background-color:white;
+	  background-color: #8c8c8c;
 	  color: black;
 	  padding: 15px;
 }
-table{
+	.th{
 	  border: 3px solid black;
 	  border-collapse: collapse;
 	  text-align: center;
@@ -64,9 +91,10 @@ table{
 }
 .contactos {
             width: 100%;
-            height: 300px;
+            height: 100%;
             margin-top: 100px;
-            background-color: yellow;
+            background-color: black;
+			color: white;
         }
 
         .tab{
@@ -74,12 +102,7 @@ table{
                 text-align: center;
                 top: 0;
         }
-
-        .tab h2{
-            text-align: left;
-        }
-
-        .tab table{
+        .tabt{
             width: 100%;
                 text-align: center;
         }
@@ -106,122 +129,254 @@ table{
         .pr3{
             padding: 10px;
         }
-		.copy{
+        .copy{
             width: 100%;
             height: 30px;
-            margin-top: 20px;
-            background-color: rgb(158, 158, 9);
+            background-color: #000000;
             text-align: center;
+			color: white;
         }
-		
 </style>
 
-<body>
-	<ul>
-		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
-                        alt="Logo de la escuela"></a></li>
-		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
-		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
-		  <li><a href="escuela.html">Primaria</a></li>
-		  <li><a href="Alumnos.html">Alumnos</a></li>
-		  <li><a href="#Instalaciones"></i> Instalaciones</a></li>
-		  <li><a href="#Eventos">Eventos</a></li>
-	</ul>
-	<br>
-	<table>
-		<tr>
-			<th>Hora</th>
-			<th>Lunes</th>
-			<th>Martes</th>
-			<th>Miercoles</th>
-			<th>Jueves</th>
-			<th>Viernes</th>
-			<th>Sabado</th>
-		</tr>
-		<tr>
-			<td>8:10 a 9:00</td>
-			<td>9WGE</td>
-			<td>wEG</td>
-			<td>weggew</td>
-			<td>WEGEWG</td>
-			<td>wSG</td>
-			<td>affaa</td>
-		</tr>
-		<tr>
-			<td>9:10 a 10:00</td>
-		   <td>9WGE</td>
-			<td>wEG</td>
-			<td>weggew</td>
-			<td>WEGEWG</td>
-			<td>wSG</td>
-			<td>affaa</td>
-		</tr>
-		<tr>
-			<td>10:10 a 11:00</td>
-			<td>9WGE</td>
-			<td>wEG</td>
-			<td>weggew</td>
-			<td>WEGEWG</td>
-			<td>wSG</td>
-			<td>affaa</td>
-		</tr>
-		<tr>
-			<td>RECESO</td>
-			<td>RECESO</td>
-			<td>RECESO</td>
-			<td>RECESO</td>
-			<td>RECESO</td>
-			<td>RECESO</td>
-			<td>RECESO</td>
-		</tr>
-		<tr>
-			<td>11:20 a 12:10</td>
-			<td>9WGE</td>
-			<td>wEG</td>
-			<td>weggew</td>
-			<td>WEGEWG</td>
-			<td>wSG</td>
-			<td>affaa</td>
-		</tr>
-		<tr>
-			<td>13:20 a 14:10</td>
-			<td>9WGE</td>
-			<td>wEG</td>
-			<td>egegw</td>
-			<td>WEGEWG</td>
-			<td>wSG</td>
-			<td>fvfv</td>
-		</tr>
-	</table>
-	
-		<div class="contactos">
-			<div class="tab">
-				<table>
-					<tr>
-						<th><h3 class="pr">Más sobre nosotros</h3></th>
-						<th><h3 class="pr2">Redes Sociales</h3></th>
-						<th><h3 class="pr3">Contactos</h3></th>
-					</tr>
-					<tr>
-						<td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
-						<td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
-						<td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
-						<td></td>
-					</tr>
-				</table>
-		</div>
+<body> 
+		<ul>
+			<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
+							alt="Logo de la escuela"></a></li>
+			  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+			  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
+			  <li><a href="escuela.html">Primaria</a></li>
+			  <li><a href="Alumnos.html">Alumnos</a></li>
+			  <li><a href="instalaciones.html"></i> Instalaciones</a></li>
+			  <li><a href="#Eventos">Eventos</a></li>
+		</ul>
+		<br>
+		
+		<h2 class="descripcion">Alumno: Alejando López</h2>
+					<div class="linea">
+			</div>
+		<h2 class="descripcion">HORARIO</h2>
+		<table class="th">
+			<tr>
+				<th class="tth">Hora</th>
+				<th class="tth">Lunes</th>
+				<th class="tth">Martes</th>
+				<th class="tth">Miercoles</th>
+				<th class="tth">Jueves</th>
+				<th class="tth">Viernes</th>
+				<th class="tth">Sabado</th>
+			</tr>
+			<tr>
+				<th class="tth">8:10 a 9:00</th>
+				<td class="tbl1">Español</td>
+				<td class="tbl1">Computacion</td>
+				<td class="tbl1">Computacion</td>
+				<td class="tbl1">Español</td>
+				<td class="tbl1">Computacion</td>
+				<td class="tbl1">Español</td>
+			</tr>
+			<tr>
+				<th class="tth">9:10 a 10:00</th>
+				<td class="tbl2">Matematicas</td>
+				<td class="tbl2">Matematicas</td>
+				<td class="tbl2">Matematicas</td>
+				<td class="tbl2">Matematicas</td>
+				<td class="tbl2">Matematicas</td>
+				<td class="tbl2">Matematicas</td>
+			</tr>
+			<tr>
+				<th class="tth">10:10 a 11:00</th>
+				<td class="tbl1">Filosofia</td>
+				<td class="tbl1">Ingles</td>
+				<td class="tbl1">Ingles</td>
+				<td class="tbl1">Filosofia</td>
+				<td class="tbl1">Ingles</td>
+				<td class="tbl1">Filosofia</td>
+			</tr>
+			<tr>
+				<th class="tth">RECESO</th>
+				<td class="tbl2">RECESO</td>
+				<td class="tbl2">RECESO</td>
+				<td class="tbl2">RECESO</td>
+				<td class="tbl2">RECESO</td>
+				<td class="tbl2">RECESO</td>
+				<td class="tbl2">RECESO</td>
+			</tr>
+			<tr>
+				<th class="tth">11:20 a 12:10</th>
+				<td class="tbl1">Fisica</td>
+				<td class="tbl1">Titularidad</td>
+				<td class="tbl1">Titularidad</td>
+				<td class="tbl1">Fisica</td>
+				<td class="tbl1">Titularidad</td>
+				<td class="tbl1">Fisica</td>
+			</tr>
+			<tr>
+				<th class="tth">13:20 a 14:10</th>
+				<td class="tbl2">Plan de vida</td>
+				<td class="tbl2">Base de Datos</td>
+				<td class="tbl2">Base de Datos</td>
+				<td class="tbl2">Plan de vida</td>
+				<td class="tbl2">Base de Datos</td>
+				<td class="tbl2">Plan de vida</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+			<div class="linea">
+			</div>
+				<h2 class="descripcion">CALIFICACIONES</h2>
+					<table class="th">
+						<tr>
+							<th class="tth">M A T E R I A S</th>
+							<th class="tth">EVAL 1</th>
+							<th class="tth">Faltas 1</th>
+							<th class="tth">EVAL 2</th>
+							<th class="tth">Faltas 2</th>
+							<th class="tth">EV. Fin</th>
+							<th class="tth">Faltas 3</th>
+							<th class="tth">TOTAL FALTAS</th>
+							<th class="tth">CAL FIN</th>
+						</tr>
+						<tr>
+							<td class="tc">Plan de vida</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Base de Datos</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Matematicas</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">3</td>
+							<td class="tc">8</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Fisica</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Filosofia</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Español</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Ingles</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Computacion</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">3</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tc">Titularidad</td>
+							<td class="tc">9.8</td>
+							<td class="tc">2</td>
+							<td class="tc">8.9</td>
+							<td class="tc"></td>
+							<td class="tc">9.2</td>
+							<td class="tc">1</td>
+							<td class="tc">8</td>
+							<td class="tc">9.3</td>
+						</tr>
+						<tr>
+							<td class="tth">P R O M E D I O</td>
+							<td class="tth">9.6</td>
+							<td class="tth">8</td>
+							<td class="tth">8.7</td>
+							<td class="tth">0</td>
+							<td class="tth">9.2</td>
+							<td class="tth">9</td>
+							<td class="tth">17</td>
+							<td class="tth">9.3</td>
+						</tr>
+					</table>
+			<div class="contactos">
+					<div class="tab">
+						<table class="tabt">
+							<tr>
+								<th><h3 class="pr">Más sobre nosotros</h3></th>
+								<th><h3 class="pr2">Redes Sociales</h3></th>
+								<th><h3 class="pr3">Contactos</h3></th>
+							</tr>
+							<tr>
+								<td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
+								<td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
+								<td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+			
 
-		<div class="copy">
-			<p>© Copyright - Todos los derechos reservados</p>
-		</div>
+				<p class="copy">© Copyright - Todos los derechos reservados</p>
+			</div>
+			
 </body>
 </html>
