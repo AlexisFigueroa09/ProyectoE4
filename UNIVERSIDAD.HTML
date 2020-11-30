@@ -1,269 +1,383 @@
 <html>
-	<head>
-		<TITLE>UNIVERSIDAD</TITLE>
-		<LINK REL="ICON" HREF="PROYECTO FINAL/BIRRETE.ico">
-	</head>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			font-family: sans-serif;
-		}
-		ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: #333;
-		}
 
-		li {
-			float: left;
-		}
+<head>
+	<TITLE>UNIVERSIDAD</TITLE>
+	<LINK REL="ICON"
+		HREF="https://images.vexels.com/media/users/3/166437/isolated/preview/bffa5a307594d515806f630fdb8df215-tapa-de-birrete-plana-by-vexels.png">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+	}
 
-		. contac{
-				display: button;
-				}
-				
-		li a {
-			display: block;
-			  color: white;
-			  text-align: center;
-			  padding: 14px 16px;
-			  text-decoration: none;
-		}
-
-		li a:hover {
-			background-color: gray;
-		}
-		body{background-color:	rgb(73, 78, 80);
-		}
-		#cabecera{background-color:	rgb(0, 51, 153);
-				
-		}
-		#borde{border-style: solid;
-				border-width: 7px;
-				border-radius: 5px;
-				margin: 30px;             
-				margin-left: 150px;
-				margin-right: 150px;
-				background-color:black;
-			}
-		#instalaciones{border-style: solid;
-				border-width: 7px;
-				border-radius: 5px;
-				margin: 30px;             
-				margin-left: 150px;
-				margin-right: 150px;
-				background-color:white;
-				height:270px;
-			}
-		div.gallery {
-				margin: 5px;
-				border: 1px solid #ccc;
-				float: left;
-				width: 300px;
-			}
-		div.gallery img {
-				width: 100%;
-				height: auto;
-			}
-		.desc {
-				padding: 15px;
-				text-align: center;
-			}
-		.gallery:hover {
-				border: 3px solid #777;
-			}
-		.desc{
-				color:black;
-				text-align:center;
-				text-transform: capitalize;
-			}
-		.name{
-				color: white;
-				text-align: center;
-				font-size:270%;
-			}
-		
-		.contactos {
+	.bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            left: 0;
+            top: 0;
             width: 100%;
-            height: 300px;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .bar li {
+            float: left;
+        }
+
+        .contac {
+            display: button;
+        }
+
+        .bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .bar li a:hover {
+            background-color: gray;
+        }
+
+        .bar img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .bar p {
+            font-size: 20px;
+        }
+
+        .bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+	body {
+		background-color: rgb(73, 78, 80);
+	}
+
+	#cabecera {
+		background-color: rgb(0, 51, 153);
+		height: 200px;
+
+	}
+
+	#borde {
+		border-style: solid;
+		border-width: 7px;
+		border-radius: 5px;
+		margin: 30px;
+		margin-left: 150px;
+		margin-right: 150px;
+		background-color: black;
+	}
+
+	#instalaciones {
+		border-style: solid;
+		border-width: 7px;
+		border-radius: 5px;
+		margin: 30px;
+		margin-left: 150px;
+		margin-right: 150px;
+		background-color: white;
+		height: 270px;
+	}
+
+	div.gallery {
+		margin: 5px;
+		border: 0px solid #ccc;
+		float: left;
+		width: 300px;
+		margin-left: 22px;
+		margin-right: 22px;
+		margin-top: 10px;
+
+	}
+
+	div.gallery img {
+		width: 300px;
+		height: 170px;
+	}
+
+	.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	.desc {
+		color: black;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	.name {
+		color: white;
+		text-align: center;
+		font-size: 400%;
+		text-top: 100px;
+	}
+
+	.contactos {
+            text-align: center;
+            width: 100%;
             margin-top: 100px;
-            background-color: white;
+            background-color: black;
+            color: white;
         }
 
-        .tab{
-            font-family: sans-serif;
-                text-align: center;
-                top: 0;
-        }
-
-        .tab h2{
-            text-align: left;
-        }
-
-        .tab table{
-            width: 100%;
-                text-align: center;
-        }
-        .info{
-            text-align: left;
-            font-size: 14px;
-            padding: 30px;
-        }
-
-        .cont{
-            text-align: right;
-            font-size: 14px;
-            padding: 30px;
-        }
-
-        .pr{
-            padding: 10px;
-        }
-        
-        .pr2{
-            padding: 10px;
-        }
-
-        .pr3{
-            padding: 10px;
-        }
-		.copy{
-            width: 100%;
-            height: 30px;
-            margin-top: 20px;
-            background-color: rgb(158, 158, 9);
+        .pr {
             text-align: center;
         }
-		#header {
-			margin:auto;
-			width:800px;
-			height:150px;
-			font-family:Arial, Helvetica, sans-serif;
-		}
-			
-		.nav li a{
-			padding:10px 15px;
-			}
-		
-		.nav > li{
-			float:left;	
-		}	
-		.nav li ul{
-			display:none;
-			position: absolute;
-			min-width:140px;
-		}
-		.nav li:hover > ul{
-		display:block;
-		}
-		.carreraname{
-				color: black;	
-				text-align: center;
-				font-size:270%;
-			}
-		.carrera{
-			border-style: solid;
-			border-width: 7px;
-			border-radius: 5px;
-			margin: 30px;             
-			margin-left: 150px;
-			margin-right: 150px;
-			height:350px;
-			
-		}
-	</style>	
-	<body>
+
+        .red {
+            margin: auto;
+            float: right;
+        }
+
+        .red p {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .red li a {
+            padding: 20px;
+            list-style-type: none;
+            display: block;
+        }
+
+        .red li {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .red li img {
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .red img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .cont {
+            float: left;
+        }
+
+        .cont li {
+            display: list-item;
+            list-style-type: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .com {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com2 {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com3 {
+            width: 200px;
+            height: 100px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .pr2 {
+            text-align: center;
+        }
+
+        .pa {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+	.carreratitulo {
+		color: white;
+		text-align: center;
+		font-size: 270%;
+		margin-top: 20px;
+
+	}
+
+	.carrera {
+		border-style: solid;
+		border-width: 7px;
+		border-radius: 5px;
+		margin: 30px;
+		margin-left: 150px;
+		margin-right: 150px;
+		height: 350px;
+
+	}
+
+	.carreradesc {
+		padding: 15px;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	#name {
+		color: rgb(0, 51, 153);
+	}
+
+	#barrita {
+		border-style: solid;
+
+		margin-left: 200px;
+		margin-right: 200px;
+		background-color: black;
+	}
+
+	.carreraname {
+		color: black;
+		text-align: center;
+		font-size: 270%;
+		margin-top: 20px;
+	}
+</style>
+
+<body>
+	<div class="bar">
 		<ul>
-		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
-                        alt="Logo de la escuela"></a></li>
-		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
-		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
-		  <li><a href="escuela.html">Primaria</a></li>
-		  <li><a href="Alumnos.html">Alumnos</a></li>
-		  <li><a href="instalaciones.html"></i> Instalaciones</a></li>
-		  <li><a href="#Eventos">Eventos</a></li>
-	</ul>
-		<div id="borde">
-			<div id="cabecera">
-				<div class="logo">
-					<img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" alt="logo universitario" style="width:300px;height:200px;float:left;margin-right:20px;margin-bottom:20px;">
-		
-					<h1 class="name">Politecnica Nacional</h1>
-					<div id="header">
-						<ul class="nav">
-							
-							<li><a href="">EVENTOS</a></li>
-	
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<div id="instalaciones">
-			
-			<div class="gallery">
-			  <a target="CAMPUS" href="https://www.elnuevodia.com/resizer/NTKnkbpLox_50c8mdyYndAej3Nc=/829x0/smart/filters:quality(95):format(png)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/VC72J5ZF3RGLFM3J4ZXJSN3XHM.jpg">
-				<img src="https://www.elnuevodia.com/resizer/NTKnkbpLox_50c8mdyYndAej3Nc=/829x0/smart/filters:quality(95):format(png)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/VC72J5ZF3RGLFM3J4ZXJSN3XHM.jpg" alt="universidad1" width="600" height="400">
-			  </a>
-			  <div class="desc">El campus  lleva desde 1957</div>
-			</div>
-			<div class="gallery">
-			  <a target="CAMPUS" href="https://asset.winnetnews.com/image/cache/slide/post/image-kesempatan-kuliah-di-turki-makin-besar-ujiannya-pakai-bahasa-indonesia.png">
-				<img src="https://asset.winnetnews.com/image/cache/slide/post/image-kesempatan-kuliah-di-turki-makin-besar-ujiannya-pakai-bahasa-indonesia.png" alt="universidad2" width="600" height="400">
-			  </a>
-			  <div class="desc">El campus cuenta con un gran espacio para descansar entre clases</div>
-			</div>
-			<div class="gallery">
-			  <a target="CAMPUS" href="https://conceptodefinicion.de/wp-content/uploads/2011/01/Campus.jpg">
-				<img src="https://conceptodefinicion.de/wp-content/uploads/2011/01/Campus.jpg" alt="universidad3" width="600" height="400">
-			  </a>
-			  <div class="desc">La universidad cuanta con un gran numero de egresados</div>
+			<li>
+			<li><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="70px" height="50px
+			alt=" Logo de la escuela"></li>
+			<li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+			<li><a href="escuela.html">Primaria</a></li>
+			<li><a href="Alumnos.html">Alumnos</a></li>
+			<li><a href="instalaciones.html"></i> Instalaciones</a></li>
+			<li><a href="EVENTOS.html">Eventos</a></li>
+		</ul>
+	</div>
+	<div id="borde">
+		<div id="cabecera">
+			<div class="logo">
+				<img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" alt="logo universitario"
+					style="width:300px;height:200px;float:left;margin-right:20px;margin-bottom:20px;">
+				<h1 id="name">.</h1>
+				<h1 id="name">.</h1>
+				<h1 class="name">Politecnica Nacional</h1>
+
 			</div>
 
 		</div>
-		<div class="carreras">
-			<h1 class="carreraname">CARRERAS</h1>
-				<div class="carrera">
-					<img src="https://onaliat.mx/blog/wp-content/uploads/2019/09/OnAliat_cuanto-dura-la-carrera-de-derecho.jpg" alt="carrera1" width="450" height="300" style="float:left;margin-right:20px;margin-bottom:20px;margin-top:20px;margin-left:20;">
-					<h1 class="carreradesc">La carrera de derechos</h1>
-				</div>
-		</div>
-		
-		
-		<div class="contactos">
-        <div class="tab">
-            <table>
-                <tr>
-                    <th><h3 class="pr">Más sobre nosotros</h3></th>
-                    <th><h3 class="pr2">Redes Sociales</h3></th>
-                    <th><h3 class="pr3">Contactos</h3></th>
-                </tr>
-                <tr>
-                    <td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
-                    <td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
-                    <td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
-                    <td></td>
-                </tr>
-            </table>
-		</div>
-		
+	</div>
+	<div id="instalaciones">
 
-    <div class="copy">
-        <p>© Copyright - Todos los derechos reservados</p>
+		<div class="gallery">
+			<a target="CAMPUS">
+				<img src="https://www.elnuevodia.com/resizer/NTKnkbpLox_50c8mdyYndAej3Nc=/829x0/smart/filters:quality(95):format(png)/cloudfront-us-east-1.images.arcpublishing.com/gfrmedia/VC72J5ZF3RGLFM3J4ZXJSN3XHM.jpg"
+					alt="universidad1">
+			</a>
+			<div class="desc">El campus lleva desde 1957</div>
+		</div>
+		<div class="gallery">
+			<a target="CAMPUS">
+				<img src="https://asset.winnetnews.com/image/cache/slide/post/image-kesempatan-kuliah-di-turki-makin-besar-ujiannya-pakai-bahasa-indonesia.png"
+					alt="universidad2">
+			</a>
+			<div class="desc">El campus cuenta con un gran espacio para descansar entre clases</div>
+		</div>
+		<div class="gallery">
+			<a target="CAMPUS">
+				<img src="https://conceptodefinicion.de/wp-content/uploads/2011/01/Campus.jpg" alt="universidad3">
+			</a>
+			<div class="desc">La universidad cuanta con un gran numero de egresados</div>
+		</div>
+
+	</div>
+	<div class="carreras">
+		<h1 class="carreratitulo">CARRERAS</h1>
+		<div id="barrita"></div>
+		<div class="carrera">
+			<img src="https://onaliat.mx/blog/wp-content/uploads/2019/09/OnAliat_cuanto-dura-la-carrera-de-derecho.jpg"
+				alt="carrera1" width="450" height="300"
+				style="float:left;margin-right:20px;margin-bottom:20px;margin-top:20px;margin-left:20;">
+			<h1 class="carreraname">La carrera de derechos</h1>
+			<h1 class="carreradesc">Carrera en la que cambian las leyes cada año y gana el que soborne mas</h1>
+		</div>
+		<div class="carrera">
+			<img src="data:image/jpeg;base64,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"
+				alt="carrera1" width="450" height="300"
+				style="float:right;margin-right:20px;margin-bottom:20px;margin-top:20px;margin-left:20;">
+			<h1 class="carreraname">Ingenieria en mecatronica</h1>
+			<h1 class="carreradesc">Creación de transformers</h1>
+		</div>
+		<div class="carrera">
+			<img src="https://i2.wp.com/www.universidadescr.com/blog/wp-content/uploads/Screen-Shot-2018-06-29-at-11.51.16-1.png?fit=860%2C452&ssl=1"
+				alt="carrera1" width="450" height="300"
+				style="float:left;margin-right:20px;margin-bottom:20px;margin-top:20px;margin-left:20;">
+			<h1 class="carreraname">Administracion de empresas</h1>
+			<h1 class="carreradesc">Administrar empresas</h1>
+		</div>
+	</div>
+
+
+    <div class="contactos">
+
+        <br>
+        <br>
+        <ul class="cont">
+            <h3 class="pr2">Comentarios</h3>
+            <li><label for="nom">Nombre: </label>
+                <input class="com" type="text" id="tem"></li>
+            <li><label for="correo">Correo: </label>
+                <input class="com2" type="text" id="hum"></li>
+            <li><label for="hum">Comentarios: </label>
+                <textarea class="com3" name="mensaje" id="hum"></textarea></li>
+            <li><input type="button" value="Enviar"></li>
+        </ul>
+        <ul class="red">
+            <h3 class="pr">Redes Sociales</h3>
+            <li><a href="https://www.facebook.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/1000px-Facebook.svg.png"
+                        width="120px" height="50px"></a>
+                <p>Siguenos en<br>Facebook</p>
+            </li>
+            <li><a href="https://twitter.com"><img
+                        src="https://1000logos.net/wp-content/uploads/2017/06/Color-Twitter-Logo.jpg" width="120px"
+                        height="50px"></a>
+                <p>Siguenos en<br>Twitter</p>
+            </li>
+            <li><a href="https://www.instagram.com"><img
+                        src="https://cdn.elgrupoinformatico.com/Noticias/2017/08/instagram-logo-colores-720x360.jpg"
+                        width="120px" height="50px"></a>
+                <p>Siguenos en<br>Instagram</p>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="pa">© Copyright - Todos los derechos reservados</p>
     </div>
-	</body>
+</body>
+
 </html>

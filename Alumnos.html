@@ -7,6 +7,12 @@
         href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
         type="image/png" sizes="64x64" />
 <style>
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: arial;
+		}
 	.linea {margin-left: 100px;
 		margin-right: 100px;
 		background-color: white;
@@ -15,40 +21,137 @@
 }
 	.descripcion{
 		text-align: center;
-		font-family: sans-serif;
+		font-family: arial;
 		color: white;
 }
 	body{background-color:#8f00b3;
 	}
-	ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color: #333;
-	}
-	.titulo{float: center;
-	}
+	.bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-	li {
-		float: left;
-	}
+        .bar li {
+            float: left;
+        }
 
-	. contac{
-			display: button;
-			}
-			
-	li a {
-		display: block;
-		  color: white;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-	}
+        .contac {
+            display: button;
+        }
 
-	li a:hover {
-		background-color: #666666;
-	}
+        .bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .bar li a:hover {
+            background-color: gray;
+        }
+
+        .bar img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .bar p {
+            font-size: 20px;
+        }
+
+        .bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+		
+		.contactos {
+            text-align: center;
+            width: 100%;
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+        }
+
+        .pr {
+            text-align: center;
+        }
+
+        .red {
+            margin: auto;
+            float: right;
+        }
+
+        .red p {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .red li a {
+            padding: 20px;
+            list-style-type: none;
+            display: block;
+        }
+
+        .red li {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .red li img {
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .red img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .cont {
+            float: left;
+        }
+
+        .cont li {
+            display: list-item;
+            list-style-type: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .com {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com2 {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com3 {
+            width: 200px;
+            height: 100px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .pr2 {
+            text-align: center;
+        }
 	.tc {
 	  border: 3px solid black;
 	  border-collapse: collapse;
@@ -90,71 +193,109 @@
 	  margin: 0 auto;
 }
 .contactos {
+            text-align: center;
             width: 100%;
-            height: 100%;
+            height: auto;
             margin-top: 100px;
-            background-color: black;
+			background-color: black;
 			color: white;
         }
 
-        .tab{
-            font-family: sans-serif;
-                text-align: center;
-                top: 0;
-        }
-        .tabt{
-            width: 100%;
-                text-align: center;
-        }
-        .info{
-            text-align: left;
-            font-size: 14px;
-            padding: 30px;
-        }
-
-        .cont{
-            text-align: right;
-            font-size: 14px;
-            padding: 30px;
-        }
-
         .pr{
-            padding: 10px;
+            text-align: center;
+        }
+
+        .red{
+            margin: auto;
+            float: right;
+        }
+
+        .red p{
+            text-align: center;
+            padding: 15px;
+        }
+
+        .red li a{
+            padding: 20px;
+            list-style-type: none;
+            display: block;
+        }
+
+        .red li{
+            display: inline-block;
+            text-align: center;
+        }
+
+        .red li img{
+            text-align: center;
+            border-radius: 10px;
         }
         
-        .pr2{
-            padding: 10px;
+        .cont{
+            float: left;
         }
 
-        .pr3{
-            padding: 10px;
-        }
-        .copy{
-            width: 100%;
-            height: 30px;
-            background-color: #000000;
+        .cont li{
+            display: list-item;
+            list-style-type: none;
             text-align: center;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .com{
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com2{
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com3{
+            width: 200px;
+            height: 100px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .pr2{
+            text-align: center;
+        }
+
+        .pa{
+            text-align: center;
+            background-color: black;
 			color: white;
         }
 </style>
 
 <body> 
-		<ul>
-			<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
-							alt="Logo de la escuela"></a></li>
-			  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
-			  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
-			  <li><a href="escuela.html">Primaria</a></li>
-			  <li><a href="Alumnos.html">Alumnos</a></li>
-			  <li><a href="instalaciones.html"></i> Instalaciones</a></li>
-			  <li><a href="#Eventos">Eventos</a></li>
-		</ul>
+		<div class="bar">
+    <ul>
+		<li><li><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="70px" height="50px
+			alt=" Logo de la escuela"></li>
+		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
+		  <li><a href="escuela.html">Primaria</a></li>
+		  <li><a href="instalaciones.html"></i> Instalaciones</a></li>
+		  <li><a href="EVENTOS.html">Eventos</a></li>
+	</ul>
+</div>
 		<br>
-		
+		<br>
+		<br>
+		<br>
 		<h2 class="descripcion">Alumno: Alejando López</h2>
+		<br>
 					<div class="linea">
 			</div>
+			<br>
 		<h2 class="descripcion">HORARIO</h2>
+		<br>
 		<table class="th">
 			<tr>
 				<th class="tth">Hora</th>
@@ -225,6 +366,7 @@
 			<div class="linea">
 			</div>
 				<h2 class="descripcion">CALIFICACIONES</h2>
+				<br>
 					<table class="th">
 						<tr>
 							<th class="tth">M A T E R I A S</th>
@@ -348,35 +490,50 @@
 							<td class="tth">9.3</td>
 						</tr>
 					</table>
-			<div class="contactos">
-					<div class="tab">
-						<table class="tabt">
-							<tr>
-								<th><h3 class="pr">Más sobre nosotros</h3></th>
-								<th><h3 class="pr2">Redes Sociales</h3></th>
-								<th><h3 class="pr3">Contactos</h3></th>
-							</tr>
-							<tr>
-								<td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
-								<td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
-								<td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
-								<td></td>
-							</tr>
-						</table>
-					</div>
-			
+					<div class="contactos">
 
-				<p class="copy">© Copyright - Todos los derechos reservados</p>
-			</div>
-			
+						<br>
+						<br>
+						<ul class="cont">
+							<h3 class="pr2">Comentarios</h3>
+							<li><label for="nom">Nombre: </label>
+								<input class="com" type="text" id="tem"></li>
+							<li><label for="correo">Correo: </label>
+								<input class="com2" type="text" id="hum"></li>
+							<li><label for="hum">Comentarios: </label>
+								<textarea class="com3" name="mensaje" id="hum"></textarea></li>
+							<li><input type="button" value="Enviar"></li>
+						</ul>
+						<ul class="red">
+							<h3 class="pr">Redes Sociales</h3>
+							<li><a href="https://www.facebook.com"><img
+										src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/1000px-Facebook.svg.png"
+										width="120px" height="50px"></a>
+								<p>Siguenos en<br>Facebook</p>
+							</li>
+							<li><a href="https://twitter.com"><img
+										src="https://1000logos.net/wp-content/uploads/2017/06/Color-Twitter-Logo.jpg" width="120px"
+										height="50px"></a>
+								<p>Siguenos en<br>Twitter</p>
+							</li>
+							<li><a href="https://www.instagram.com"><img
+										src="https://cdn.elgrupoinformatico.com/Noticias/2017/08/instagram-logo-colores-720x360.jpg"
+										width="120px" height="50px"></a>
+								<p>Siguenos en<br>Instagram</p>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p class="pa">© Copyright - Todos los derechos reservados</p>
+					</div>
 </body>
 </html>

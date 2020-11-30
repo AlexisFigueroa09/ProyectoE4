@@ -1,229 +1,410 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title> Politecnica Nacional</title>
+    <title> Politecnica Nacional</title>
     <meta charset="UTF-8">
     <link rel="icon"
         href="https://image.winudf.com/v2/image/Y29tLmVwOWdhcmluLkVzY3VlbGFfUHJpbWFyaWFfOV9NYWx2aW5hc19BcmdlbnRpbmFzX2ljb25fMTUzNzcwNTEwMV8wODI/icon.png?w=170&fakeurl=1"
         type="image/png" sizes="64x64" />
-<style>
-.linea {margin-left: 100px;
-		margin-right: 100px;
-		background-color: white;
-		height: 5px;
-		width: 1100px;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial;
+        }
 
-ul {
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color: #333;
-}
-.titulo{float: center;
-}
+        .linea {
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: white;
+            height: 5px;
+            width: 1100px;
+        }
 
-li {
-	float: left;
-}
+        .titulo {
+            float: center;
+        }
 
-. contac{
-		display: button;
-		}
-		
-li a {
-	display: block;
-	  color: white;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-}
-
-li a:hover {
-	background-color: #666666;
-}
-.deslizar{
-    width: 68%;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 60px;
-    border-radius: 12px;
-}
-.deslizar ul{
-    text-align: center;
-    display: flex;
-    width: 400%;
-    padding: 0;
-    animation: cambio 20s infinite alternate;
-}
-.deslizar li{
-    width: 100%;
-    list-style: none;
-}
-.deslizar img{
-    width: 900px;
-    height: 420px;
-}
-@keyframes cambio {
-    0% { margin-left: 0%; }
-    20% { margin-left: 0%; }
-
-    25% {margin-left: -100%; }
-    45% {margin-left: -100%; }
-
-    50% {margin-left: -200%; }
-    70% {margin-left: -200%; }
-
-    75% {margin-left: -300%; }
-    100% {margin-left: -300%; }
-}    
-	.descripcion{
-			text-align: center;
-			font-family: sans-serif;
-			color: white;
-			background-color: #8f00b3;
-}
-        .contactos {
+        .bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            float: left;
+            top: 0;
             width: 100%;
-            height: 100%;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .bar li {
+            float: left;
+        }
+
+        .contac {
+            display: button;
+        }
+
+        .bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .bar li a:hover {
+            background-color: gray;
+        }
+
+        .bar img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .bar p {
+            font-size: 20px;
+        }
+
+        .bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .deslizar {
+            width: 68%;
+            margin: auto;
+            overflow: hidden;
+            margin-top: 60px;
+            border-radius: 12px;
+        }
+
+        .deslizar ul {
+            text-align: center;
+            display: flex;
+            width: 400%;
+            padding: 0;
+            animation: cambio 20s infinite alternate;
+        }
+
+        .deslizar li {
+            width: 100%;
+            list-style: none;
+        }
+
+        .deslizar img {
+            width: 900px;
+            height: 420px;
+        }
+
+        @keyframes cambio {
+            0% {
+                margin-left: 0%;
+            }
+
+            20% {
+                margin-left: 0%;
+            }
+
+            25% {
+                margin-left: -100%;
+            }
+
+            45% {
+                margin-left: -100%;
+            }
+
+            50% {
+                margin-left: -200%;
+            }
+
+            70% {
+                margin-left: -200%;
+            }
+
+            75% {
+                margin-left: -300%;
+            }
+
+            100% {
+                margin-left: -300%;
+            }
+        }
+
+        .descripcion {
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+            background-color: #8f00b3;
+        }
+
+        .contactos {
+            text-align: center;
+            width: 100%;
             margin-top: 100px;
             background-color: black;
+            color: white;
         }
 
-        .tab{
-            font-family: sans-serif;
-                text-align: center;
-                top: 0;
-        }
-
-        .tab h2{
-            text-align: left;
-        }
-
-        .tab table{
-            width: 100%;
-			height: 100%
+        .pr {
             text-align: center;
         }
-		td, th{
-			padding: 5px;
-			}
-        .info{
-            text-align: left;
-            font-size: 14px;
-            padding: 30px;
+
+        .red {
+            margin: auto;
+            float: right;
         }
 
-        .cont{
-            text-align: right;
-            font-size: 14px;
-            padding: 30px;
+        .red p {
+            text-align: center;
+            padding: 15px;
         }
 
-        .pr{
-            padding: 10px;
-        }
-        
-        .pr2{
-            padding: 10px;
+        .red li a {
+            padding: 20px;
+            list-style-type: none;
+            display: block;
         }
 
-        .pr3{
-            padding: 10px;
+        .red li {
+            display: inline-block;
+            text-align: center;
         }
 
-        .copy{
-            width: 100%;
-            height: 30px;
+        .red li img {
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .red img {
+            float: left;
+            margin: left;
+            border-radius: 2px;
+        }
+
+        .cont {
+            float: left;
+        }
+
+        .cont li {
+            display: list-item;
+            list-style-type: none;
+            text-align: center;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .com {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com2 {
+            width: 200px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .com3 {
+            width: 200px;
+            height: 100px;
+            float: right;
+            border-radius: 5px;
+        }
+
+        .pr2 {
+            text-align: center;
+        }
+
+        .pa {
+            text-align: center;
             background-color: black;
-            text-align: center;
+            color: white;
         }
 
-</style>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body style=background-color:#8f00b3;>
+        .caja {
+            margin-top: 0;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
 
-	<ul>
-		<li><a href="Inicio.html"><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="40px"
-                        alt="Logo de la escuela"></a></li>
-		  <li><a class="active" href="Inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
-		  <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
-		  <li><a href="escuela.html">Primaria</a></li>
-		  <li><a href="Alumnos.html">Alumnos</a></li>
-		  <li><a href="instalaciones.html"></i> Instalaciones</a></li>
-		  <li><a href="#Eventos">Eventos</a></li>
-	</ul>
-	<br>
-		<div class="descripcion">
-			<img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png"
-                        width="120px" alt="Logo de la escuela"><h2 class="titulo">Politécnica Nacional</h2>
-			<p> Institucón con más de 30 años de recibir alumnos con una gran experiencia<br>con los mejores maestros capacitados para importar las clases y<br> empresas asociadas para hacer practicas a alumnos de nivel superior</p>
-		</div>
-		<div class="linea">
-		</div>
-			<div class="descripcion">
-				<h2>Universidad</h2>
-			<div>
-				<div class="deslizar">
-						<ul>
-							<li> <img src="https://www.cordobabn.com/media/cordobabn/images/2020/08/03/2020080311275047914.jpg"></li>
-							<li> <img src="https://static3.elcorreo.com/www/pre2017/multimedia/noticias/201603/18/media/cortadas/carrera--575x350.jpg"></li>
-							<li> <img src="https://mextudia.com/wp-content/uploads/2016/11/Formas-de-titulaci%C3%B3n-1.jpg"></li>
-							<li> <img src="https://innovacioneconomica.com/wp-content/uploads/2020/06/FOTO-WEB-TEC-MTY-.jpg"></li>
-						</ul>
-				</div>
-		<br>
-			<div class="descripcion">
-			<p> Institución para educacion superior para almnos que quieren estudiar una ingenieria o licenciatura<br> en distintos tipos de carreras con un examen de admicion y clases online por prevencion a contagios de covid</p>
-			</div>
-		<div class="linea">
-		<br>
-		</div>
-			<div class="descripcion">
-				<h2>Primaria</h2>
-			</div>
-				<div class="deslizar">
-						<ul>
-							<li> <img src="https://eacnur.org/blog/wp-content/uploads/2017/07/iStock-486325400-724x400.jpg"></li>
-							<li> <img src="https://noticias8islas.com/wp-content/uploads/2020/07/ESCUELA_ONLINE_ENCUESTA_2_1600X900.jpg"></li>
-							<li> <img src="https://becas-mexico.mx/wp-content/uploads/2019/08/becas-mexico-2019-estudiantes-primaria-becas-edomex.jpg"></li>
-							<li> <img src="https://www.anglomoderno.edu.mx/images/escuela.png"></li>
-						</ul>
-				</div>
-			
-		<br>
-			<div class="descripcion">
-			<p> Institución para educacion primaria para almnos <br> clases online por prevencion a contagios de covid</p>
-			</div>
-			
-		<div class="contactos">
-				<div class="tab">
-					<table>
-						<tr>
-							<th><h3 class="pr">Más sobre nosotros</h3></th>
-							<th><h3 class="pr2">Redes Sociales</h3></th>
-							<th><h3 class="pr3">Contactos</h3></th>
-						</tr>
-						<tr>
-							<td><p class="info">Sed semper metus nec leo fringilla faucibus.<br> Donec rutrum mi eu neque interdum,<br> et laoreet mauris viverra.</p></td>
-							<td><a href="https://www.facebook.com"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-icono-de-facebook-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Facebook</p></td>
-							<td><p class="cont">Pellentesque mi enim, hendrerit non ultricies vitae,<br> finibus a neque.<br> Aliquam erat volutpat.</p></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><a href="https://twitter.com"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Twitter</p></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td><a href="https://www.instagram.com"><img src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png" width="40px" height="40px"></a><p>Siguenos en<br> Instagram</p></td>
-							<td></td>
-						</tr>
-					</table>
-				</div>
-			<p class="copy">© Copyright - Todos los derechos reservados</p>
-		</div>
+        .caja p {
+            color: white;
+        }
+
+        .dropdown {
+            position: fixed;
+            display: inline-block;
+        }
+
+        .contenido {
+            display: none;
+            background-color: #333;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            color: white;
+        }
+
+        .dropdown:hover .contenido {
+            display: block;
+        }
+
+        #enviar {
+            border-radius: 4px;
+            padding: 10px;
+            background-color: rgb(12, 189, 12);
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body style=background-color:#8f00b3;>
+    <div class="bar">
+        <ul>
+            <li><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="70px" height="50px
+                        alt=" Logo de la escuela"></li>
+            <li><a class="active" href="escuela.html"> Primaria</a></li>
+            <li><a href="UNIVERSIDAD.HTML">Universidad</a></li>
+            <li><a href="Alumnos.html">Alumnos</a></li>
+            <li><a href="instalaciones.html"></i> Instalaciones</a></li>
+            <li><a href="EVENTOS.html">Eventos</a></li>
+            <li >
+                <div class="dropdown">
+                    <a class="caja">Login</a>
+                    <div class="contenido">
+                        <form name="formulario1" onsubmit="return sesion()">
+                            <label for="user">Usuario: </label>
+                            <input type="text" id="user" />
+                            <br>
+                            <br>
+                            <label for="pas">Contraseña: </label>
+                            <input type="password" id="pas" />
+                            <br>
+                            <br>
+                            <input type="submit" id="enviar" value="Iniciar sesión">
+                        </form>
+                    </div>
+                </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="descripcion">
+        <img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="120px" alt="Logo de la escuela">
+        <h2 class="titulo">Politécnica Nacional</h2>
+        <p> Institucón con más de 30 años de recibir alumnos con una gran experiencia<br>con los mejores maestros
+            capacitados para importar las clases y<br> empresas asociadas para hacer practicas a alumnos de nivel
+            superior</p>
+    </div>
+    <br>
+    <div class="linea">
+    </div>
+    <br>
+    <div class="descripcion">
+        <h2>Universidad</h2>
+    </div>
+    <div class="deslizar">
+        <ul>
+            <li> <img src="https://www.cordobabn.com/media/cordobabn/images/2020/08/03/2020080311275047914.jpg"></li>
+            <li> <img
+                    src="https://static3.elcorreo.com/www/pre2017/multimedia/noticias/201603/18/media/cortadas/carrera--575x350.jpg">
+            </li>
+            <li> <img src="https://mextudia.com/wp-content/uploads/2016/11/Formas-de-titulaci%C3%B3n-1.jpg"></li>
+            <li> <img src="https://innovacioneconomica.com/wp-content/uploads/2020/06/FOTO-WEB-TEC-MTY-.jpg"></li>
+        </ul>
+    </div>
+    <br>
+    <div class="descripcion">
+        <p> Institución para educacion superior para almnos que quieren estudiar una ingenieria o licenciatura<br> en
+            distintos tipos de carreras con un examen de admicion y clases online por prevencion a contagios de covid
+        </p>
+    </div>
+    <br>
+    <div class="linea">
+        <br>
+    </div>
+    <br>
+    <div class="descripcion">
+        <h2>Primaria</h2>
+    </div>
+    <div class="deslizar">
+        <ul>
+            <li> <img src="https://eacnur.org/blog/wp-content/uploads/2017/07/iStock-486325400-724x400.jpg"></li>
+            <li> <img
+                    src="https://noticias8islas.com/wp-content/uploads/2020/07/ESCUELA_ONLINE_ENCUESTA_2_1600X900.jpg">
+            </li>
+            <li> <img
+                    src="https://becas-mexico.mx/wp-content/uploads/2019/08/becas-mexico-2019-estudiantes-primaria-becas-edomex.jpg">
+            </li>
+            <li> <img src="https://www.anglomoderno.edu.mx/images/escuela.png"></li>
+        </ul>
+    </div>
+
+    <br>
+    <div class="descripcion">
+        <p> Institución para educacion primaria para almnos <br> clases online por prevencion a contagios de covid</p>
+    </div>
+
+    <div class="contactos">
+
+        <br>
+        <br>
+        <ul class="cont">
+            <h3 class="pr2">Comentarios</h3>
+            <li><label for="nom">Nombre: </label>
+                <input class="com" type="text" id="tem"></li>
+            <li><label for="correo">Correo: </label>
+                <input class="com2" type="text" id="hum"></li>
+            <li><label for="hum">Comentarios: </label>
+                <textarea class="com3" name="mensaje" id="hum"></textarea></li>
+            <li><input type="button" value="Enviar"></li>
+        </ul>
+        <ul class="red">
+            <h3 class="pr">Redes Sociales</h3>
+            <li><a href="https://www.facebook.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/1000px-Facebook.svg.png"
+                        width="120px" height="50px"></a>
+                <p>Siguenos en<br>Facebook</p>
+            </li>
+            <li><a href="https://twitter.com"><img
+                        src="https://1000logos.net/wp-content/uploads/2017/06/Color-Twitter-Logo.jpg" width="120px"
+                        height="50px"></a>
+                <p>Siguenos en<br>Twitter</p>
+            </li>
+            <li><a href="https://www.instagram.com"><img
+                        src="https://cdn.elgrupoinformatico.com/Noticias/2017/08/instagram-logo-colores-720x360.jpg"
+                        width="120px" height="50px"></a>
+                <p>Siguenos en<br>Instagram</p>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="pa">© Copyright - Todos los derechos reservados</p>
+    </div>
+
 </body>
+
 </html>
