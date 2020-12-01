@@ -243,6 +243,7 @@
         .dropdown {
             position: fixed;
             display: inline-block;
+            float: left;
         }
 
         .contenido {
@@ -264,6 +265,12 @@
             padding: 10px;
             background-color: rgb(12, 189, 12);
         }
+
+        .joj {
+            color: #333;
+        }
+
+        .joj li :hover {}
     </style>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -271,6 +278,7 @@
 <body style=background-color:#8f00b3;>
     <div class="bar">
         <ul>
+            <li style="color: #333;">....</li>
             <li><img src="https://www.uasb.edu.ec/UserFiles/390/Image/escuela.png" width="70px" height="50px
                         alt=" Logo de la escuela"></li>
             <li><a class="active" href="escuela.html"> Primaria</a></li>
@@ -278,9 +286,13 @@
             <li><a href="Alumnos.html">Alumnos</a></li>
             <li><a href="instalaciones.html"></i> Instalaciones</a></li>
             <li><a href="EVENTOS.html">Eventos</a></li>
-            <li >
+            <div class="joj">
+                <li>...............................................</li>
+                <li>...............................................</li>
+            </div>
+            <li id="log">
                 <div class="dropdown">
-                    <a class="caja">Login</a>
+                    <a id="demo">Login</a>
                     <div class="contenido">
                         <form name="formulario1" onsubmit="return sesion()">
                             <label for="user">Usuario: </label>
@@ -365,29 +377,39 @@
         <br>
         <ul class="cont">
             <h3 class="pr2">Comentarios</h3>
-            <li><label for="nom">Nombre: </label>
-                <input class="com" type="text" id="tem"></li>
-            <li><label for="correo">Correo: </label>
-                <input class="com2" type="text" id="hum"></li>
-            <li><label for="hum">Comentarios: </label>
-                <textarea class="com3" name="mensaje" id="hum"></textarea></li>
-            <li><input type="button" value="Enviar"></li>
+            <li>
+                <form name="formulario" onsubmit="return comentarios()">
+                    <label for="nom">Nombre: </label>
+                    <input class="com" type="text" id="tem"><br><br>
+                    <label for="correo">Correo: </label>
+                    <input class="com2" type="text" id="hum"><br><br>
+                    <textarea class="com3" for="men" name="mensaje" id="hum"></textarea>
+                    <label for="hum">Comentarios: </label><br><br>
+                    <button onclick="comentarios()">Enviar</button>
+                </form>
+            </li>
         </ul>
         <ul class="red">
             <h3 class="pr">Redes Sociales</h3>
             <li><a href="https://www.facebook.com"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Facebook.svg/1000px-Facebook.svg.png"
                         width="120px" height="50px"></a>
+                <br>
+                <br>
                 <p>Siguenos en<br>Facebook</p>
             </li>
             <li><a href="https://twitter.com"><img
                         src="https://1000logos.net/wp-content/uploads/2017/06/Color-Twitter-Logo.jpg" width="120px"
                         height="50px"></a>
+                <br>
+                <br>
                 <p>Siguenos en<br>Twitter</p>
             </li>
             <li><a href="https://www.instagram.com"><img
                         src="https://cdn.elgrupoinformatico.com/Noticias/2017/08/instagram-logo-colores-720x360.jpg"
                         width="120px" height="50px"></a>
+                <br>
+                <br>
                 <p>Siguenos en<br>Instagram</p>
             </li>
         </ul>
@@ -404,7 +426,39 @@
         <br>
         <p class="pa">© Copyright - Todos los derechos reservados</p>
     </div>
+    <script>
+        var nomb = [];
+        document.getElementById("demo").innerHTML = nomb;
 
+        function sesion() {
+            var nom = document.getElementById("user").value;
+            var con = document.getElementById("pas").value;
+            nomb.push("Paco");
+
+            if (nom == "Paco" && con == "123") {
+                nomb.push("Paco");
+                document.getElementById("demo").innerHTML = nomb;
+            } else {
+
+            }
+        }
+
+        function comentarios() {
+            var nom = document.getElementById("tem").value;
+            var cor = document.getElementById("hum").value;
+            var men = document.getElementById("men").value;
+            var obj = {}
+            if (nom == "" | cor == "" | men == "") {
+                alert("Error, revise si lleno todos los campos.")
+            } else {}
+            console.log(obj)
+            obj.name = nom;
+            obj.email = cor;
+            obj.doubts = men;
+            console.log(obj)
+        }
+        }
+    </script>
 </body>
 
 </html>
